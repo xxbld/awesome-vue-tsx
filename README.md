@@ -50,7 +50,7 @@ export default class Test extends Vue {
     attr1:string; // not reactive
 
     // forbid
-    // 原因:编译时会被当初{data(){return {}}}
+    // 原因:编译时会被当成{data(){return {}}}
     // data = 'data';
     // get data(){return this.attr0}
 

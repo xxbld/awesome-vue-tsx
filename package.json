@@ -1,0 +1,24 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "clean": "lerna run clean --stream --parallel",
+    "build": "lerna run build --stream --parallel"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-lerna-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-lerna-changelog": "^2.0.2",
+    "lerna": "^3.16.4",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.6.3"
+  }
+}
