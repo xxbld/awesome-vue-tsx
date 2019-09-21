@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "commit": "git-cz",
-    "clean": "lerna run clean --stream --parallel",
+    "clean": "lerna clean && lerna run clean --stream --parallel",
     "build": "lerna run build --stream --parallel"
   },
   "config": {
