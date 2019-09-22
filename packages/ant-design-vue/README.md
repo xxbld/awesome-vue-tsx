@@ -3,5 +3,5 @@
 ## Usage
 
 ```
-import { Affix } from 'tsx-ant-design-vue'
+import { Affix } from '@tsxfactory/ant-design-vue'
 ```

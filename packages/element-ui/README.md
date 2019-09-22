@@ -3,5 +3,5 @@
 ## Usage
 
 ```
-import { Affix } from 'tsx-element-ui'
+import { Affix } from '@tsxfactory/element-ui'
 ```
