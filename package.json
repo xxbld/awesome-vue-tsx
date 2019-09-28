@@ -5,8 +5,10 @@
     "packages/*"
   ],
   "scripts": {
+    "serve:element": "yarn workspace element-tsx-example run serve",
     "commit": "git-cz",
-    "clean": "lerna clean && lerna run clean --stream --parallel",
+    "clear": "yarn clean && lerna clean",
+    "clean": "lerna run clean --stream --parallel",
     "build": "lerna run build --stream --parallel"
   },
   "config": {

@@ -35,6 +35,6 @@
   "dependencies": {
     "iview": "^3.5.1",
     "vue": "^2.6.10",
-    "vue-@tsxfactory/support": "^2.3.2"
+    "vue-tsx-support": "^2.3.2"
   }
 }

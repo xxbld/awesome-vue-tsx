@@ -1,5 +1,5 @@
 # 使用vue (cli3) + tsx的一些总结
-喜欢ts,执着于vue+tsx的完美体验
+喜欢ts,打死也要用vue+tsx
 
 ## 创建一个ts项目
 ### vue create
@@ -27,16 +27,16 @@ module.exports = {
 ```
 
 ## vue常见的ts使用方法
-* [*.vue(SFC)中使用]()
-* [tsx中使用]()
+* [*.vue(SFC)中使用](https://github.com/xxbld/awesome-vue-tsx/tree/master/packages/element-tsx-example/src/views/SFCtx.vue)
+* [tsx中使用](https://github.com/xxbld/awesome-vue-tsx/tree/master/packages/element-tsx-example/src/views/Count.tsx)
 
 ## 创建带提示的tsx组件
 * 依赖[vue-tsx-support](https://github.com/wonderful-panda/vue-tsx-support)
 
 常用组件tsx提示包装
-* [element-ui]()
-* [ant-design-vue]()
-* [iview]()
+* [element-ui](https://github.com/xxbld/awesome-vue-tsx/tree/master/packages/element-ui)
+* [ant-design-vue](https://github.com/xxbld/awesome-vue-tsx/tree/master/packages/ant-design-vue)
+* [iview](https://github.com/xxbld/awesome-vue-tsx/tree/master/packages/iview)
 
 ## 使用ts|tsx需要注意的事项
 ### class 写法
@@ -78,6 +78,7 @@ export default class Test extends Vue {
 export default class Test extends Vue {
     //    render(h:any){} // right also
     render(){
+        // NOTICE: ES6以上又会自动注入h，此时下面这句编译时会报错
         const h = this.$createElement;
         // const jsxError = (<Comp style={} vTest={}/>);
         const jsxCorrect=(<Com {...{props:{style:{},vTest:{}}}}/>);
